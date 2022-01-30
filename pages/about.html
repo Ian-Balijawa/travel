@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+ 
     <!-- fonts -->
     <link rel="stylesheet" href="../font/fonts.css">
     <!-- normalize css -->
@@ -23,206 +33,252 @@
 
 <body>
     <!-- navbar  -->
-    <nav class="navbar">
-        <div class="container flex">
-            <a href="../index.html" class="site-brand">
-                Trip<span>Boss</span>
-            </a>
-
-            <button type="button" id="navbar-show-btn" class="flex">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div id="navbar-collapse">
-                <button type="button" id="navbar-close-btn" class="flex">
-                    <i class="fas fa-times"></i>
-                </button>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./gallery.html" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./blog.html" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- end of navbar  -->
-
-    <!-- header -->
-    <header class="flex header-sm">
-        <div class="container">
-            <div class="header-title">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in
-                    molestias beatae doloremque, ratione optio.</p>
-            </div>
-        </div>
-    </header>
-    <!-- header -->
-
-    <!-- about section -->
-    <section id="about" class="py-4">
-        <div class="container">
-            <div class="title-wrap">
-                <span class="sm-title">things to know about us</span>
-                <h2 class="lg-title">our story</h2>
-            </div>
-
-            <div class="about-row">
-                <div class="about-left my-2">
-                    <img src="./assets/img/about-img.jpg" alt="about img">
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="/" class="nav__logo">Travel</a>
+        
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./gallery.html" class="nav__link">Gallery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./blog.html" class="nav__link">Blogs</a>
+                        </li>
+                         <li class="nav__item">
+                            <a href="./contact.html" class="nav__link">About</a>
+                        </li>
+                    </ul>
+        
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+        
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
                 </div>
-                <div class="about-right">
-                    <h2>15 Years of Experience</h2>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae sed aperiam
-                        qui repudiandae earum voluptatem. Modi at inventore omnis veniam necessitatibus exercitationem
-                        vel nesciunt delectus ex officiis, culpa doloremque odit illo saepe placeat. Delectus
-                        consequuntur reprehenderit omnis accusantium officiis!</p>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo
-                        blanditiis quidem consequuntur qui quaerat fuga iste tenetur consequatur porro. Aliquam maiores
-                        alias doloribus at quisquam quo numquam perferendis. Odit!</p>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of about section -->
+            </nav>
+        </header>
 
-    <!-- facts section -->
-    <section id="facts" class="py-4 flex">
-        <div class="container">
-            <div class='title-wrap'>
-                <span class="sm-title">know some facts about our agency</span>
-                <h2 class="lg-title">fun facts</h2>
-            </div>
+        <!--==================== HOME ====================-->
+        <main class="main">
+            <section class="home" id="home">
+                <img src="../assets/img/home1.jpg" alt="" class="home__img">
 
-            <div class="facts-row">
-                <div class="facts-item">
-                    <span class="fas fa-camera-retro facts-icon"></span>
-                    <div class="facts-info">
-                        <strong>1220</strong>
-                        <p class="text">photos taken</p>
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Discover your place</span>
+                        <h1 class="home__data-title">Explore The <br> Most <b>Beautiful <br> Places In UG</b></h1>
+                        <a href="#place" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">5 best places to visit</span>
+                            <a href="./gallery.html#popular" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="../assets/img/home2.jpg" alt="" class="home__info-img">
+                        </div>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="facts-item">
-                    <span class="fas fa-umbrella-beach  facts-icon"></span>
-                    <div class="facts-info">
-                        <strong>450</strong>
-                        <p class="text">beaches visited</p>
-                    </div>
+        <section id="about" class="py-4">
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title">things to know about us</span>
+                    <h2 class="lg-title">our story</h2>
                 </div>
 
-                <div class="facts-item">
-                    <span class="fas fa-mountain facts-icon"></span>
-                    <div class="facts-info">
-                        <strong>84</strong>
-                        <p class="text">mountains climbed</p>
+                <div class="about-row">
+                    <div class="about-left my-2">
+                        <img src="../assets/img/about-img.jpg" alt="about img">
                     </div>
-                </div>
-
-                <div class="facts-item">
-                    <span class="fas fa-ship facts-icon"></span>
-                    <div class="facts-info">
-                        <strong>120</strong>
-                        <p class="text">cruises organized</p>
+                    <div class="about-right">
+                        <h2>15 Years of Experience</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae sed aperiam
+                            qui repudiandae earum voluptatem. Modi at inventore omnis veniam necessitatibus exercitationem
+                            vel nesciunt delectus ex officiis, culpa doloremque odit illo saepe placeat. Delectus
+                            consequuntur reprehenderit omnis accusantium officiis!</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo
+                            blanditiis quidem consequuntur qui quaerat fuga iste tenetur consequatur porro. Aliquam maiores
+                            alias doloribus at quisquam quo numquam perferendis. Odit!</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end of facts section -->
+        </section>
+        <!-- end of about section -->
 
+        <!-- facts section -->
+        <section id="facts" class="py-4 flex">
+            <div class="container">
+                <div class='title-wrap'>
+                    <span class="sm-title">know some facts about our agency</span>
+                    <h2 class="lg-title">fun facts</h2>
+                </div>
 
-    <!-- footer -->
-    <footer class="py-4">
-        <div class="container footer-row">
-            <div class="footer-item">
-                <a href="../index.html" class="site-brand">
-                    Trip<span>Boss</span>
-                </a>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam
-                    vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium
-                    reiciendis ipsa suscipit veritatis voluptate.</p>
+                <div class="facts-row">
+                    <div class="facts-item">
+                        <span class="fas fa-camera-retro facts-icon"></span>
+                        <div class="facts-info">
+                            <strong>1220</strong>
+                            <p class="text">photos taken</p>
+                        </div>
+                    </div>
+
+                    <div class="facts-item">
+                        <span class="fas fa-umbrella-beach  facts-icon"></span>
+                        <div class="facts-info">
+                            <strong>450</strong>
+                            <p class="text">beaches visited</p>
+                        </div>
+                    </div>
+
+                    <div class="facts-item">
+                        <span class="fas fa-mountain facts-icon"></span>
+                        <div class="facts-info">
+                            <strong>84</strong>
+                            <p class="text">mountains climbed</p>
+                        </div>
+                    </div>
+
+                    <div class="facts-item">
+                        <span class="fas fa-ship facts-icon"></span>
+                        <div class="facts-info">
+                            <strong>120</strong>
+                            <p class="text">cruises organized</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- end of facts section -->
 
-            <div class="footer-item">
-                <h2>Follow us on: </h2>
-                <ul class="social-links">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-pinterest"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus"></i>
-                        </a>
-                    </li>
-                </ul>
+
+        <!-- footer -->
+       <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description">Travel you choose the <br> destination,
+                            we offer you the <br> experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Plan y Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Become a member</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2021 travel-uganda. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
             </div>
+        </footer>
 
-            <div class="footer-item">
-                <h2>Popular Places:</h2>
-                <ul>
-                    <li><a href="#">Thailand</a></li>
-                    <li><a href="#">Australia</a></li>
-                    <li><a href="#">kabaale</a></li>
-                    <li><a href="#">Switzerland</a></li>
-                    <li><a href="#">Germany</a></li>
-                </ul>
-            </div>
+        <!-- end of footer -->
 
-            <div class="subscribe-form footer-item">
-                <h2>Subscribe for Newsletter!</h2>
-                <form class="flex">
-                    <input type="email" placeholder="Enter Email" class="form-control">
-                    <input type="submit" class="btn" value="Subscribe">
-                </form>
-            </div>
-        </div>
-    </footer>
-    <!-- end of footer -->
+        <!-- js -->
+        <script src="js/script.js"></script>
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
 
-    <!-- js -->
-    <script src="js/script.js"></script>
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line scrollup__icon"></i>
-    </a>
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="../assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== SCROLL REVEAL===============-->
-    <script src="../assets/js/scrollreveal.min.js"></script>
+        <!--=============== SWIPER JS ===============-->
+        <script src="../assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="../assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="../assets/js/main.js"></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

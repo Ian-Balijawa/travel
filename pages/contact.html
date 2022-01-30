@@ -11,38 +11,45 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
             integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+        
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+
         <!-- fonts -->
-        <link rel="stylesheet" href="font/fonts.css">
+        <link rel="stylesheet" href="../font/fonts.css">
         <!-- normalize css -->
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="../css/normalize.css">
         <!-- custom css -->
-        <link rel="stylesheet" href="css/utility.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="../css/utility.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
     </head>
 
     <body>
 
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Travel</a>
+                <a href="/" class="nav__logo">Travel</a>
         
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="/index.html" class="nav__link active-link">Home</a>
+                            <a href="/" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="./pages/about.html" class="nav__link">About</a>
+                            <a href="./about.html" class="nav__link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="./pages/gallery.html" class="nav__link">Gallery</a>
+                            <a href="./gallery.html" class="nav__link">Gallery</a>
                         </li>
                         <li class="nav__item">
-                            <a href="./pages/blog.html" class="nav__link">Blogs</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./pages/contact.html" class="nav__link">Contact</a>
+                            <a href="./blog.html" class="nav__link">Blogs</a>
                         </li>
                     </ul>
         
@@ -64,7 +71,7 @@
         <!--==================== HOME ====================-->
         <main class="main">
             <section class="home" id="home">
-                <img src="assets/img/home1.jpg" alt="" class="home__img">
+                <img src="../assets/img/home1.jpg" alt="" class="home__img">
 
                 <div class="home__container container grid">
                     <div class="home__data">
@@ -89,13 +96,13 @@
                     <div class="home__info">
                         <div>
                             <span class="home__info-title">5 best places to visit</span>
-                            <a href="#" class="button button--flex button--link home__info-button">
+                            <a href="./gallery.html#popular" class="button button--flex button--link home__info-button">
                                 More <i class="ri-arrow-right-line"></i>
                             </a>
                         </div>
 
                         <div class="home__info-overlay">
-                            <img src="assets/img/home2.jpg" alt="" class="home__info-img">
+                            <img src="../assets/img/home2.jpg" alt="" class="home__info-img">
                         </div>
                     </div>
                 </div>
@@ -240,6 +247,19 @@
         <!-- end of footer -->
 
         <!-- js -->
-        <script src="js/script.js"></script>
+        <script src="../js/script.js"></script>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="../assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="../assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="../assets/js/main.js"></script>
     </body>
 </html>
