@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>T&T</title>
+            <meta name="description" content="Your one-stop travel site for your dream vacation. Bundle your stay with a car rental or flight and you can save more.">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="/public/assets/css/swiper-bundle.min.css">
+        
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/public/assets/css/styles.css">
+
+        <!-- fonts -->
+        <link rel="stylesheet" href="/public/font/fonts.css">
+        <!-- normalize css -->
+        <link rel="stylesheet" href="/public/css/normalize.css">
+        <!-- custom css -->
+        <link rel="stylesheet" href="/public/css/utility.css">
+        <link rel="stylesheet" href="/public/css/style.css">
+        <link rel="stylesheet" href="/public/css/responsive.css">
+    </head>
+
+    <body>
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="/" class="nav__logo">Travel</a>
+        
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./gallery" class="nav__link">Gallery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./blog" class="nav__link">Blogs</a>
+                        </li>
+                    </ul>
+        
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+        
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== HOME ====================-->
+        <main class="main">
+            <section class="home" id="home">
+                <img src="/public/assets/img/home1.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Discover your place</span>
+                        <h1 class="home__data-title">Explore The <br> Most <b>Beautiful <br> Places In UG</b></h1>
+                        <a href="#place" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">5 best places to visit</span>
+                            <a href="./gallery.html#popular" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="/public/assets/img/home2.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <!--==================== HOME ====================-->
+
+
+        <!-- contact section -->
+        <section id="contact" class="py-4">
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title">get in touch with us</span>
+                    <h2 class="lg-title">contact us</h2>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-left">
+                        <form class="contact-form">
+                            <input type="text" class="form-control" placeholder="Your name">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <textarea rows="4" class="form-control" placeholder="Your message"
+                                style="resize: none;"></textarea>
+                            <input type="submit" class="btn" value="Send message">
+                        </form>
+                    </div>
+                    <div class="contact-right my-2">
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-phone-alt"></i>
+                            </span>
+                            <div>
+                                <span>Phone</span>
+                                <p class="text">+01-584-886-009</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-map-marked-alt"></i>
+                            </span>
+                            <div>
+                                <span>Address</span>
+                                <p class="text">102 East 22nd Street, NY</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon flex">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span>Message</span>
+                                <p class="text">info@T&T.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+
+
+        <!-- footer -->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description">Travel you choose the <br> destination,
+                            we offer you the <br> experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Plan y Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Become a member</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2021 travel-uganda. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src="../js/script.js"></script>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="/public/assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="/public/assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="/public/assets/js/main.js"></script>
+    </body>
+</html>
