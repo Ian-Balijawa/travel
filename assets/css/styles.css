@@ -141,6 +141,7 @@ img,
 video {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 button,
@@ -622,9 +623,21 @@ input {
   font-size: var(--small-font-size);
 }
 
-.place__subtitle, .place__price {
+.place__price {
   display: block;
+  background-color: rgb(93, 100, 93);
+  color:whitesmoke;
+  padding:1rem;
+  border-radius: 5px;
+  cursor:pointer;
 }
+.place__price:hover{
+  background-color:rgb(152, 153, 152);
+  cursor:pointer;
+}
+.place__subtitle{
+  display: block;
+} 
 
 .place__title {
   font-size: var(--h3-font-size);
