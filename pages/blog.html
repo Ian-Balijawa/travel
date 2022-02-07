@@ -1,381 +1,423 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>News & Blogs</title>
+		<meta
+			name="description"
+			content="Your one-stop travel site for your dream vacation. Bundle your stay with a car rental or flight and you can save more."
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="shortcut icon"
+			href="../assets/img/favicon.png"
+			type="image/png"
+		/>
+		<!-- font awesome cdn -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="shortcut icon"
+			href="../assets/img/favicon.png"
+			type="image/png"
+		/>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>News & Blogs</title>
-    <meta name="description"
-        content="Your one-stop travel site for your dream vacation. Bundle your stay with a car rental or flight and you can save more." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png" />
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png" />
+		<!--=============== REMIXICONS ===============-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+		<!--=============== SWIPER CSS ===============-->
+		<link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+		<!--=============== CSS ===============-->
+		<link rel="stylesheet" href="../assets/css/styles.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+		<!-- fonts -->
+		<link rel="stylesheet" href="../font/fonts.css" />
+		<!-- normalize css -->
+		<link rel="stylesheet" href="../css/normalize.css" />
+		<!-- custom css -->
+		<link rel="stylesheet" href="../css/utility.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/responsive.css" />
+	</head>
 
-    <!-- fonts -->
-    <link rel="stylesheet" href="../font/fonts.css" />
-    <!-- normalize css -->
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <!-- custom css -->
-    <link rel="stylesheet" href="../css/utility.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-</head>
+	<body>
+		<!-- start of header -->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav__logo">Travel</a>
 
-<body>
-    <!-- start of header -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Travel</a>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="/" class="nav__link active-link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="./about.html" class="nav__link">About</a>
+						</li>
+						<li class="nav__item">
+							<a href="./explore.html" class="nav__link">Explore</a>
+						</li>
+						<li class="nav__item">
+							<a href="./gallery.html" class="nav__link">Gallery</a>
+						</li>
+						<li class="nav__item">
+							<a href="./contact.html" class="nav__link">Contact</a>
+						</li>
+					</ul>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="/" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./about.html" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./explore.html" class="nav__link">Explore</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./gallery.html" class="nav__link">Gallery</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./contact.html" class="nav__link">Contact</a>
-                    </li>
-                </ul>
+					<div class="nav__dark">
+						<!-- Theme change button -->
+						<span class="change-theme-name">Dark mode</span>
+						<i class="ri-moon-line change-theme" id="theme-button"></i>
+					</div>
 
-                <div class="nav__dark">
-                    <!-- Theme change button -->
-                    <span class="change-theme-name">Dark mode</span>
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div>
+					<i class="ri-close-line nav__close" id="nav-close"></i>
+				</div>
 
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-function-line"></i>
+				</div>
+			</nav>
+		</header>
+		<!-- end of header -->
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-        </nav>
-    </header>
-    <!-- end of header -->
+		<main class="main">
+			<!--==================== HOME ====================-->
+			<section class="home" id="home">
+				<img src="../assets/img/home1.jpg" alt="" class="home__img" />
 
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <img src="../assets/img/home1.jpg" alt="" class="home__img" />
+				<div class="home__container container grid">
+					<div class="home__data">
+						<span class="home__data-subtitle">Discover your place</span>
+						<h1 class="home__data-title">
+							Explore The <br />
+							Most
+							<b
+								>Beautiful <br />
+								Places In UG</b
+							>
+						</h1>
+						<a href="#blog" class="button">Explore</a>
+					</div>
+					<div class="home__social">
+						<a
+							href="https://www.facebook.com/"
+							target="_blank"
+							class="home__social-link"
+						>
+							<i class="ri-facebook-box-fill"></i>
+						</a>
+						<a
+							href="https://www.instagram.com/"
+							target="_blank"
+							class="home__social-link"
+						>
+							<i class="ri-instagram-fill"></i>
+						</a>
+						<a
+							href="https://twitter.com/"
+							target="_blank"
+							class="home__social-link"
+						>
+							<i class="ri-twitter-fill"></i>
+						</a>
+					</div>
 
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__data-subtitle">Discover your place</span>
-                    <h1 class="home__data-title">
-                        Explore The <br />
-                        Most
-                        <b>Beautiful <br />
-                            Places In UG</b>
-                    </h1>
-                    <a href="#blog" class="button">Explore</a>
-                </div>
-                <div class="home__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-box-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                        <i class="ri-twitter-fill"></i>
-                    </a>
-                </div>
+					<div class="home__info">
+						<div>
+							<span class="home__info-title">5 best places to visit</span>
+							<a
+								href="./gallery.html#popular"
+								class="button button--flex button--link home__info-button"
+							>
+								More <i class="ri-arrow-right-line"></i>
+							</a>
+						</div>
 
-                <div class="home__info">
-                    <div>
-                        <span class="home__info-title">5 best places to visit</span>
-                        <a href="./gallery.html#popular" class="button button--flex button--link home__info-button">
-                            More <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
+						<div class="home__info-overlay">
+							<img
+								src="../assets/img/home2.jpg"
+								alt=""
+								class="home__info-img"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- blog section -->
+		<section id="blog" class="py-4">
+			<div class="container">
+				<div class="title-wrap">
+					<h2 class="sm-title">Read these blogs for More information</h2>
+					<h3 class="lg-title">Recent blog</h3>
+				</div>
 
-                    <div class="home__info-overlay">
-                        <img src="../assets/img/home2.jpg" alt="" class="home__info-img" />
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- blog section -->
-    <section id="blog" class="py-4">
-        <div class="container">
-            <div class="title-wrap">
-                <h2 class="sm-title">Read these blogs for More information</h2>
-                <h3 class="lg-title">Recent blog</h3>
-            </div>
+				<div class="blog-row">
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src=".././assets/img/blog-1.jpg" alt="blog" />
+							<span class="blog-date">oct 28, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravel | Ian Balijawa</span>
+							<a href="https://www.murchisonfallsnationalpark.com/">Murchison Falls National Park</a>
+							<p class="text">
+								Murchison Falls National Park sits on the shore of Lake Albert,
+								in northwest Uganda. It’s known for Murchison Falls, where the
+								Victoria Nile River surges through a narrow gap over a massive
+								drop. Park wildlife includes elephants and hippos, and there are
+								chimpanzees in the Kaniyo Pabidi mahogany forest. The Lake
+								Albert Delta is home to rare shoebill storks. There are game
+								fish in the cascades of Karuma Falls.
+							</p>
+						</div>
+					</div>
 
-            <div class="blog-row">
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src=".././assets/img/blog-1.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src=".././assets/img/blog-2.jpg" alt="blog" />
+							<span class="blog-date">oct 28, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravel | Ivan Massete</span>
+							<a href="#">Kidepo Valley National Park</a>
+							<p class="text">
+								Kidepo Valley National Park is a 1,442 square kilometres national park in the Karamoja region in northeast Uganda. Kidepo is rugged savannah, dominated by the 2,750 metres Mount Morungole and transected by the Kidepo and Narus rivers
+							</p>
+						</div>
+					</div>
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src=".././assets/img/blog-2.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src=".././assets/img/blog-3.jpg" alt="blog" />
+							<span class="blog-date">oct 28, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>travel | Sharif Kabanda</span>
+							<a href="#">Murchison Falls</a>
+							<p class="text">
+							    Also known as Kabalega Falls, is a waterfall between Lake Kyoga and Lake Albert on the Victoria Nile in Uganda. At the top of Murchison Falls, the Nile forces its way through a gap in the rocks, only 7 m (23 ft) wide, and tumbles 43 m (141 ft), before flowing westward into Lake Albert.
+							</p>
+						</div>
+					</div>
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src=".././assets/img/blog-3.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src="../assets/img/blog-4.jpg" alt="blog" />
+							<span class="blog-date">Dec 28, 2020</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravel | Ritah</span>
+							<a href="#">Itanda Falls</a>
+							<p class="text">
+                                The Itanda Falls are rapids on the White Nile river in Uganda. They are a challenge for kayakers, being graded at the highest level of difficulty.
+							</p>
+						</div>
+					</div>
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="../assets/img/blog-4.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src="../assets/img/blog-5.jpg" alt="blog" />
+							<span class="blog-date">Jan 04, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravels | Ian Balijawa</span>
+							<a href="#">The source of The Nile</a>
+							<p class="text">
+								For relaxation after your wildlife safari, you can visit Ssese
+								Islands but if you are more interested in adventure, take on
+								rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
+								Mountains climbing and Mount Elgon hike.
+							</p>
+						</div>
+					</div>
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="../assets/img/blog-5.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src="../assets/img/blog-6.jpg" alt="blog" />
+							<span class="blog-date">Aug 04, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravels | Ian Balijawa</span>
+							<a href="https://www.queenelizabethnationalpark.com/">Queen Elizabeth National Park (QENP)</a>
+							<p class="text">
+								It's located in the Western Region of Uganda, spanning the districts of Kasese, Kamwenge, Rubirizi, and Rukungiri. The park is approximately 400 kilometres (250 mi) by road south-west of Kampala, Uganda's capital and largest city.
+							</p>
+						</div>
+					</div>
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="../assets/img/blog-6.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src="../assets/img/blog-7.jpg" alt="blog" />
+							<span class="blog-date">oct 28, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravels | Jjuuko Timothy</span>
+							<a href="#">Game parks</a>
+							<p class="text">
+								The ten National Parks include Queen Elizabeth, Lake Mburo, Murchison Falls, Kidepo Valley, Kibale, Mount Elgon, Rwenzori Mountains, Semuliki, Mgahinga Gorilla, and Bwindi Impenetrable National Parks. These parks display the best in East Africa.
+							</p>
+						</div>
+					</div>
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="../assets/img/blog-7.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src="../assets/img/blog-8.jpg" alt="blog" />
+							<span class="blog-date">oct 28, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravels | Collins Mumbere</span>
+							<a href="#">Beautiful scenery</a>
+							<p class="text">
+								For relaxation after your wildlife safari, you can visit Ssese
+								Islands but if you are more interested in adventure, take on
+								rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
+								Mountains climbing and Mount Elgon hike.
+							</p>
+						</div>
+					</div>
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="../assets/img/blog-8.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
+					<div class="blog-item my-2 shadow">
+						<div class="blog-item-top">
+							<img src="../assets/img/blog-9.jpg" alt="blog" />
+							<span class="blog-date">oct 28, 2021</span>
+						</div>
+						<div class="blog-item-bottom">
+							<span>allovertravels | Ian Balijawa</span>
+							<a href="#">Entebbe botannica gardens</a>
+							<p class="text">
+								For relaxation after your wildlife safari, you can visit Ssese
+								Islands but if you are more interested in adventure, take on
+								rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
+								Mountains climbing and Mount Elgon hike.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end of blog section -->
 
-                <div class="blog-item my-2 shadow">
-                    <div class="blog-item-top">
-                        <img src="../assets/img/blog-8.jpg" alt="blog" />
-                        <span class="blog-date">oct 28, 2021</span>
-                    </div>
-                    <div class="blog-item-bottom">
-                        <span>travel | Ian Balijawa</span>
-                        <a href="#">Blog Heading</a>
-                        <p class="text">
-                            For relaxation after your wildlife safari, you can visit Ssese
-                            Islands but if you are more interested in adventure, take on
-                            rafting on the Nile, chimpanzee trekking in Kibale, Rwenzori
-                            Mountains climbing and Mount Elgon hike.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of blog section -->
+		<!-- footer -->
+		<footer class="footer section">
+			<div class="footer__container container grid">
+				<div class="footer__content grid">
+					<div class="footer__data">
+						<h3 class="footer__title">Travel</h3>
+						<ul>
+							<li class="footer__item">
+								<p class="footer__link">
+									Travel | You choose the <br />
+									destination, we offer you the <br />
+									experience.
+								</p>
+							</li>
+						</ul>
+						<div>
+							<a
+								href="https://www.facebook.com/"
+								target="_blank"
+								class="footer__social"
+							>
+								<i class="ri-facebook-box-fill"></i>
+							</a>
+							<a
+								href="https://twitter.com/"
+								target="_blank"
+								class="footer__social"
+							>
+								<i class="ri-twitter-fill"></i>
+							</a>
+							<a
+								href="https://www.instagram.com/"
+								target="_blank"
+								class="footer__social"
+							>
+								<i class="ri-instagram-fill"></i>
+							</a>
+							<a
+								href="https://www.youtube.com/"
+								target="_blank"
+								class="footer__social"
+							>
+								<i class="ri-youtube-fill"></i>
+							</a>
+						</div>
+					</div>
 
-    <!-- footer -->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content grid">
-                <div class="footer__data">
-                    <h3 class="footer__title">Travel</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <p class="footer__link">
-                                Travel | You choose the <br />
-                                destination, we offer you the <br />
-                                experience.
-                            </p>
-                        </li>
-                    </ul>
-                    <div>
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                            <i class="ri-facebook-box-fill"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="footer__social">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
-                            <i class="ri-youtube-fill"></i>
-                        </a>
-                    </div>
-                </div>
+					<div class="footer__data">
+						<h3 class="footer__subtitle">About</h3>
+						<ul>
+							<li class="footer__item">
+								<a href="./about.html" class="footer__link">About Us</a>
+							</li>
+							<li class="footer__item">
+								<a href="./blog.html" class="footer__link">News & Blogs</a>
+							</li>
+						</ul>
+					</div>
 
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">About</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="./about.html" class="footer__link">About Us</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="./blog.html" class="footer__link">News & Blogs</a>
-                        </li>
-                    </ul>
-                </div>
+					<div class="footer__data">
+						<h3 class="footer__subtitle">Company</h3>
+						<ul>
+							<li class="footer__item">
+								<a href="./gallery.html" class="footer__link">Gallery</a>
+							</li>
+							<li class="footer__item">
+								<a href="./contact.html" class="footer__link">Contact Us</a>
+							</li>
+						</ul>
+					</div>
 
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Company</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="./gallery.html" class="footer__link">Gallery</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="./contact.html" class="footer__link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
+					<div class="footer__data">
+						<h3 class="footer__subtitle">Support</h3>
+						<ul>
+							<li class="footer__item">
+								<a href="#" class="footer__link"
+									>Email: ianbalijawa16@gmail.com</a
+								>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">0756008970</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Support</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">Email: ianbalijawa16@gmail.com</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">0756008970</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+				<div class="footer__rights">
+					<p class="footer__copy">
+						&#169; 2022 travel-uganda. All rigths reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
 
-            <div class="footer__rights">
-                <p class="footer__copy">
-                    &#169; 2022 travel-uganda. All rigths reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!-- end of footer -->
+		<!-- js -->
+		<script src="../js/script.js"></script>
 
-    <!-- js -->
-    <script src="../js/script.js"></script>
+		<a href="#" class="scrollup" id="scroll-up">
+			<i class="ri-arrow-up-line scrollup__icon"></i>
+		</a>
 
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line scrollup__icon"></i>
-    </a>
+		<!--=============== SCROLL REVEAL===============-->
+		<script src="../assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== SCROLL REVEAL===============-->
-    <script src="../assets/js/scrollreveal.min.js"></script>
+		<!--=============== SWIPER JS ===============-->
+		<script src="../assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="../assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="../assets/js/main.js"></script>
-</body>
-
+		<!--=============== MAIN JS ===============-->
+		<script src="../assets/js/main.js"></script>
+	</body>
 </html>
